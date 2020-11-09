@@ -50,7 +50,7 @@ public class DiemController {
 
     @GetMapping("/getBySubject")
     ResponseEntity<?> getBySubject( @RequestParam(value = "mahocsinh", required = false)String mahocsinh,
-                                    @RequestParam(value = "hocki", required = false)boolean ki,
+                                    @RequestParam(value = "hocki", required = false)String ki,
                                     @RequestParam(value = "temon", required = false)String tenmon){
         List<Diem> list = diemService.findByStudentIDAndSubject(mahocsinh, ki.equals("true") ? true : false, tenmon);
         List<diemDTO> diemDTOS = new ArrayList<>();
