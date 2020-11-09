@@ -19,7 +19,7 @@ import java.util.UUID;
 public class Khoi {
     @Id
     @Column(unique = true)
-    private String makhoi;
+    private UUID makhoi;
     @Column
     private String tenkhoi;
     @OneToMany(

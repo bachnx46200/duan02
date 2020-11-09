@@ -18,8 +18,7 @@ import java.util.UUID;
 public class Danhgia {
     @Id
     @Column(unique = true)
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private UUID id;
 
     @Temporal(TemporalType.TIMESTAMP)
     @Column

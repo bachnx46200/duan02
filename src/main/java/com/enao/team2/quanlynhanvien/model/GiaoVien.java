@@ -20,7 +20,7 @@ import java.util.UUID;
 public class GiaoVien {
     @Id
     @Column(unique = true)
-    private String id;
+    private UUID id;
     @Column
     private String magiaovien;
     @Column

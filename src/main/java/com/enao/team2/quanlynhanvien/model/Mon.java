@@ -19,7 +19,7 @@ import java.util.UUID;
 public class Mon {
     @Id
     @Column(unique = true)
-    private String mamon;
+    private UUID mamon;
     @Column
     private String tenMon;
     @Column

@@ -19,8 +19,7 @@ import java.util.UUID;
 public class LopHoc {
     @Id
     @Column(unique = true)
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private UUID id;
     @Column
     private String malop;
     @Column

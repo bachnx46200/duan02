@@ -19,7 +19,7 @@ import java.util.UUID;
 public class PhanCong {
     @Id
     @Column(unique = true)
-    private Integer maphancong;
+    private UUID maphancong;
     @ManyToOne(fetch = FetchType.LAZY)
     private LopHoc lop;
 
