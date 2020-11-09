@@ -8,6 +8,7 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.UUID;
 
 @Entity
 @Table(name = "account")
@@ -17,9 +18,8 @@ import java.util.Set;
 @AllArgsConstructor
 public class Account {
     @Id
-    @Column
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long stt;
+    @Column(unique = true)
+    private UUID stt;
     @Column
     private String email;
     @Column

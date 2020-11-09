@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 
 import java.util.UUID;
 
-public interface HocSinhRepository extends JpaRepository<Hocsinh, String> {
+public interface HocSinhRepository extends JpaRepository<Hocsinh, UUID> {
 
     @Query(value = "SELECT*FROM hocsinh WHERE mahocsinh=?1",nativeQuery = true)
     Hocsinh finrBymhs(String mahocsinh);

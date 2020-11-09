@@ -19,8 +19,7 @@ public class DiemDanh {
 
     @Id
     @Column(unique = true)
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private UUID id;
 
     @Temporal(TemporalType.TIMESTAMP)
     @Column

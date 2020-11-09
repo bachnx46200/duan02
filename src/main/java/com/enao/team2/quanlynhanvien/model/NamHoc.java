@@ -20,7 +20,7 @@ import java.util.UUID;
 public class NamHoc {
     @Id
     @Column(unique = true)
-    private String manamhoc;
+    private UUID manamhoc;
     @Column
     private String nienhoc;
     @Column
